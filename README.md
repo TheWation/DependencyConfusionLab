@@ -39,7 +39,19 @@ Users may notice that pip resolves the dependency to version 1.0.3 from PyPI ins
 
 ### 4. Security Implications
 
+- If the dcvalidator package is installed locally, it is considered safe. In this case, running validator.py will work as usual without any security risks.
+
+- If the dcvalidator package is installed from PyPI, it may point to an attacker's malicious version. Simulate the risk by running validator.py after the installation. The code in validator.py will run OS commands and return the directory output, illustrating how an attacker can execute malicious actions.
+
+```bash
+python validator.py
+```
+
 Dependency confusion scenarios can have security implications as they might lead to the installation of unintended or malicious packages. It's crucial to be aware of the package resolution mechanism and ensure that dependencies are resolved from trusted sources.
 Disclaimer
 
 This laboratory is designed for educational purposes only. Participants should be cautious when running commands and understand the potential security risks associated with dependency confusion. Do not use these techniques in a production environment.
+
+## License
+
+`DependencyConfusionLab` is made with ♥  by [Wation](https://github.com/TheWation) and it's released under the `Apache License 2.0` license.
