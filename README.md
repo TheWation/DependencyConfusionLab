@@ -48,7 +48,8 @@ python validator.py
 ```
 
 Dependency confusion scenarios can have security implications as they might lead to the installation of unintended or malicious packages. It's crucial to be aware of the package resolution mechanism and ensure that dependencies are resolved from trusted sources.
-Disclaimer
+
+## Disclaimer
 
 This laboratory is designed for educational purposes only. Participants should be cautious when running commands and understand the potential security risks associated with dependency confusion. Do not use these techniques in a production environment.
 
